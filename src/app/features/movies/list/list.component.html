@@ -1,0 +1,15 @@
+<h1>Films</h1>
+
+<table>
+  @for (item of list$ | async; track item) {
+    <tr>
+      <td>{{ item.title }}</td>
+      <td>{{ item.year }}</td>
+    </tr>
+  }
+  @empty {
+    <tr>
+      <td> Aucune donnée</td>
+    </tr>
+  }
+</table>

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { delay, map, Observable, Observer, of, startWith } from 'rxjs';
+import { DisplayWeatherComponent } from "./features/weather/display-weather/display-weather.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DisplayWeatherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

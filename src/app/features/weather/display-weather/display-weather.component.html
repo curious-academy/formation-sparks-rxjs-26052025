@@ -1,0 +1,6 @@
+@let weath = weather$ | async;
+
+@if(weath) {
+  {{ weath.temp }}
+}
+

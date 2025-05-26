@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { GetOneWeatherService } from './get-one-weather.service';
-import { filter, map, Observable, startWith } from 'rxjs';
+import { filter, map, Observable, repeat, startWith, tap } from 'rxjs';
 import { Weather } from '../models/weather';
 
 @Injectable({
@@ -12,9 +12,11 @@ export class WeatherBusinessService {
 
   getOne(): Observable<Weather> {
     return this.weather$.pipe(
-      startWith({ current: { temperature_2m: 18}}), // genere un next
+      tap(item => console.log('item', item)), // genere un next
+      //startWith({ current: { temperature_2m: 18}}), // genere un next
       filter(item => item.current.temperature_2m > 0), //lors du next
-      map(item => ({ temp: item.current.temperature_2m })) //lors du next
+      map(item => ({ temp: item.current.temperature_2m })), //lors du next
+      repeat({ delay: 2500 })
     )
   }
 }

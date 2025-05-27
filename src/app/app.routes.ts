@@ -5,6 +5,7 @@ import { AddComponent } from './features/movies/add/add.component';
 import { ScanComponent } from './learnings/scan/scan.component';
 import { ShareReplayComponent } from './learnings/share-replay/share-replay.component';
 import { ReplaySubjectComponent } from './learnings/replay-subject/replay-subject.component';
+import { AgregatorsComponent } from './learnings/agregators/agregators.component';
 
 export const routes: Routes = [
   {
@@ -26,6 +27,10 @@ export const routes: Routes = [
   {
     path: 'replay-subject',
     component: ReplaySubjectComponent
+  },
+  {
+    path: 'agregators',
+    component: AgregatorsComponent
   },
   {
     path: 'add',

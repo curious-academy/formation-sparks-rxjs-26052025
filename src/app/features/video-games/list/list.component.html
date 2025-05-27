@@ -1,0 +1,6 @@
+@for (item of videoGames$ | async; track item.id) {
+  <div>{{item.title}}</div>
+}
+@empty {
+  <div>Oops y a rien</div>
+}

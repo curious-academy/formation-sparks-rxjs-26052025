@@ -6,6 +6,7 @@ import { ScanComponent } from './learnings/scan/scan.component';
 import { ShareReplayComponent } from './learnings/share-replay/share-replay.component';
 import { ReplaySubjectComponent } from './learnings/replay-subject/replay-subject.component';
 import { AgregatorsComponent } from './learnings/agregators/agregators.component';
+import { CombineLatestComponent } from './learnings/combine-latest/combine-latest.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,9 @@ export const routes: Routes = [
   {
     path: 'add',
     component: AddComponent
+  },
+  {
+    path: 'combine-latest',
+    component: CombineLatestComponent
   }
 ];

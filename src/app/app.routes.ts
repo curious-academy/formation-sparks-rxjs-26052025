@@ -3,6 +3,7 @@ import { ListComponent } from './features/movies/list/list.component';
 import { FromEventComponent } from './learnings/from-event/from-event.component';
 import { AddComponent } from './features/movies/add/add.component';
 import { ScanComponent } from './learnings/scan/scan.component';
+import { ShareReplayComponent } from './learnings/share-replay/share-replay.component';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,10 @@ export const routes: Routes = [
   {
     path: 'scan',
     component: ScanComponent
+  },
+  {
+    path: 'share-replay',
+    component: ShareReplayComponent
   },
   {
     path: 'add',

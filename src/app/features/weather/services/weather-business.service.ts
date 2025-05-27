@@ -16,7 +16,7 @@ export class WeatherBusinessService {
       //startWith({ current: { temperature_2m: 18}}), // genere un next
       filter(item => item.current.temperature_2m > 0), //lors du next
       map(item => ({ temp: item.current.temperature_2m })), //lors du next
-      repeat({ delay: 2500 })
+      repeat({ delay: 100500 })
     )
   }
 }

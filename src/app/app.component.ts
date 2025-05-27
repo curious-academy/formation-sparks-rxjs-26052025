@@ -13,15 +13,15 @@ export class AppComponent {
   title = 'learn-rxjs';
 
   ngOnInit(): void {
-    const obs$ = of('Données récupérées').pipe(delay(1500))
-    obs$
-    .pipe(
-      startWith('Chargement en cours ...'),
-      map(item => item + ' !')
-    )
-    .subscribe({
-      next: item => console.info('item', item)
-    })
+    // const obs$ = of('Données récupérées').pipe(delay(1500))
+    // obs$
+    // .pipe(
+    //   startWith('Chargement en cours ...'),
+    //   map(item => item + ' !')
+    // )
+    // .subscribe({
+    //   next: item => console.info('item', item)
+    // })
     // console.info('****************')
 
     // const obs$ = new Observable<string>(subscriber => { // lazy Observable
